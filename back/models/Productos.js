@@ -42,7 +42,7 @@ const productosSchema=mongoose.Schema({
                 "Alimento seco",
                 "Alimeto humedo",
                 "Accesorios",
-                "cuidado e higiene",
+                "Cuidado e higiene",
                 "Medicamentos",
                 "Snacks",
                 "Juguetes"
