@@ -3,8 +3,12 @@ const connectDatabase = require('./config/database');
 const cloudinary= require("cloudinary")
 
 
-const dotenv = require("dotenv");
-dotenv.config({path:'back/config/config.env'})
+//Seteamos archivo de configuracion
+if(process.env.NODE_ENV==="PRODUCTION") require('dotenv').config({path:'back/config/config.env'})
+
+
+// const dotenv = require("dotenv");
+// dotenv.config({path:'back/config/config.env'})
 
 // llamao al modulo connetdatabase que a la ves importa la ruta donde es creada
 connectDatabase();

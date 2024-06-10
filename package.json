@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node back/server.js",
-    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
-    "prod": "SET NODE_ENV=PRODUCTION& nodemon back/server"
+    "build": "cd front && npm run build",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon back/server"
   },
   "author": "MTZ",
   "license": "ISC",
