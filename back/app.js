@@ -28,9 +28,9 @@ app.use('/api',ordenes)
 
 if(process.env.NODE_ENV === "PRODUCTION"){
     app.use(express.static(path.join(__dirname,'../front/build')))
-
+    
     app.get("*", (req, res)=>{
-        res.sendFile(path.join(__dirname,'../front/build/index.html'))
+        res.sendFile(path.resolve(__dirname,'../front/build/index.html'))
     })
 }
 //MiddleWares para manejar errores
